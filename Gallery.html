@@ -1,0 +1,157 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset & base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:  'Cooper Black', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            background: #777B7E;
+            color: gray;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color:  #B9BBB6;
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: #4CAF50;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        footer {
+            background:  #777B7E;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+	
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+    <nav>
+        <ul style="list-style: none; padding: 0; margin: 0; text-align: center;">
+            <li style="display: inline; margin: 0 60px;"><a href="index.html"><p>Home &#127969;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Biodata.html"><p>Biodata &#128100;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Experience.html"><p>Experience &#128188;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Education.html"><p>Education &#127891;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Family.html"><p>Family &#128101;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Gallery.html"><p>Gallery &#128193;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Contact.html"><p>Contact &#128383;</p></a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Gallery Section -->
+    <section class="scroll-animate" id="gallery">
+         <h1 style="color:Pewter; text-align: center;">Gallery&#128193;</h1>
+        <div class="gallery-grid">
+            <img src="P1.jpeg" alt="Gallery Image 1">
+            <img src="P3.jpeg" alt="Gallery Image 2">
+            <img src="P10.jpeg" alt="Gallery Image 3">
+            <img src="P6.jpeg" alt="Gallery Image 4">
+            <img src="P5.jpeg" alt="Gallery Image 5">
+            <img src="P7.jpeg" alt="Gallery Image 6">
+            <img src="P4.jpeg" alt="Gallery Image 7">
+            <img src="P9.jpeg" alt="Gallery Image 8">
+            <img src="P8.jpeg" alt="Gallery Image 9">
+            <img src="P12.jpeg" alt="Gallery Image 10">
+            <img src="P11.jpeg" alt="Gallery Image 11">
+            <img src="P13.jpeg" alt="Gallery Image 12">
+			<img src="P14.jpeg" alt="Gallery Image 13">
+            <img src="P18.jpeg" alt="Gallery Image 14">
+            <img src="P16.jpeg" alt="Gallery Image 15">
+            <img src="P17.jpeg" alt="Gallery Image 16">
+        </div>
+    </section>
+<div class="music">
+		<audio src="S1.MP3" autoplay loop></audio>	
+</div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Amir Irfan. All rights reserved.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+	<link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset & base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cooper Black', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            background: #777B7E;
+            color: gray;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #B9BBB6;
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        section h2 {
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: #4CAF50;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            font-size: 1.2rem;
+        }
+
+        .contact-info div {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .contact-info div:hover {
+            background: #D9DDDC;
+        }
+
+        .contact-info span {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #777B7E;
+        }
+		.centered-form {
+			max-width: 500px;          /* width form */
+			margin: 0 auto;            /* center horizontally */
+			padding: 20px;             /* ruang dalam form */
+			background-color: lightgray;
+			color: gray;
+			border-radius: 8px;
+			box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* optional, cantik sikit */
+			text-align: center;        /* center labels & buttons */
+		}
+
+		.centered-form input[type="text"],
+		.centered-form textarea {
+			width: 90%;
+			padding: 8px;
+			margin-top: 5px;
+			margin-bottom: 15px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+
+		.centered-form input[type="submit"],
+		.centered-form input[type="reset"] {
+			padding: 10px 20px;
+			margin: 5px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		.centered-form input[type="submit"] {
+			background-color: #333;
+			color: white;
+		}
+
+		.centered-form input[type="submit"]:hover {
+			background-color: #555;
+		}
+
+		.centered-form input[type="reset"] {
+			background-color: #ccc;
+			color: #333;
+		}
+
+		.centered-form input[type="reset"]:hover {
+			background-color: #aaa;
+		}
+
+        footer {
+            background: #777B7E;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+		
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+    <nav>
+        <ul style="list-style: none; padding: 0; margin: 0; text-align: center;">
+            <li style="display: inline; margin: 0 60px;"><a href="index.html"><p>Home &#127969;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Biodata.html"><p>Biodata &#128100;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Experience.html"><p>Experience &#128188;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Education.html"><p>Education &#127891;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Family.html"><p>Family &#128101;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Gallery.html"><p>Gallery &#128193;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Contact.html"><p>Contact &#128383;</p></a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Contact Section -->
+    <section class="scroll-animate" id="contact">
+        <h1 style="color:Pewter; text-align: center;">Contact Me&#128383;</h1>
+        <div class="contact-info">
+            <div>
+                <span>Email</span>
+                <a href="mailto:amirirfan0203@gmail.com">amirirfan0203@gmail.com</a>
+            </div>
+            <div>
+                <span>Phone</span>
+                <a href="https://wasap.my/+601114937351">+60 11 1493 7351</a>
+            </div>
+            <div>
+                <span>Location</span>
+                <a href="https://maps.app.goo.gl/Erif8ziyU1PGJNov9">Petaling Jaya, Selangor</a><br>
+				<a href="https://maps.app.goo.gl/qFn3mFKHLdfZj4iQA">Teluk Intan, Perak</a><br>
+            </div>
+        </div>
+    </section>
+	
+<form onsubmit= "Submit(); return false;" style="color:gray; background-color:lightgray" class= "centered-form">
+	<label for = "Name">Name</label><br>
+		<input type = "text" id = "Name" placeholder = "Full Name"> <br><br>
+		
+	<label for="age">Age </label><br>
+		<input type="number" id="age" min="0" max="100" placeholder= "Age"><br><br>
+		
+	<label for="category">Category</label><br>
+		<input type="radio" id="student" name="category">
+	<label for="student">Students</label>
+		<input type="radio" id="lecturer" name="category">
+	<label for="lecturer">Lecturer</label>
+		<input type="radio" id="parents" name="category">
+	<label for="parents">Parents</label>
+		<input type="radio" id="others" name="category">
+	<label for="others">Others</label><br><br>
+	
+	<label for="comment">Enter Your Comment</label><br>
+		<textarea id="comment" rows="5" cols="40" placeholder="Your feedback or comments"></textarea>
+	<br><br>
+	<input type="Submit">
+	<input type="Reset">
+</form>
+<div class="music">
+		<audio src="S1.MP3" autoplay loop></audio>	
+</div>
+    </section>
+<script>
+function Submit () {
+	alert ("Terima Kasih | நன்றி | 谢谢 | Thank You");}
+</script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Amir Irfan. All rights reserved.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       /* Reset & base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cooper Black', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            background: #777B7E;
+            color: gray;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #B9BBB6;
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        section h2 {
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: #4CAF50;
+        }
+
+       #main-boxes {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 30px;
+			padding: 50px;
+		}
+
+		.main-box {
+			background: #D9DDDC;
+			border-radius: 15px;
+			width: 1000px;
+			height: 300px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			cursor: pointer;
+			transition: transform 0.3s, box-shadow 0.3s;
+			text-align: center;
+		}
+
+		.main-box h2 {
+			color: #333;
+			margin-bottom: 10px;
+			font-size: 1.8rem;
+		}
+
+		/* Susunan melintang */
+		.music-row {
+			display: flex;
+			gap: 35px;              
+			justify-content: center;
+			flex-wrap: wrap;
+			margin-top: 50px;
+		}
+
+		/* BOX SETIAP VIDEO */
+		.video-box {
+			background: #3a3a3a;
+			padding: 18px;
+			border-radius: 18px;
+			box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+		}
+
+		/* VIDEO POTRAIT */
+		.video-box video {
+			width: 300px;     
+			height: 540px;    
+			object-fit: cover;
+			border-radius: 14px;
+		}
+		/* Pop-up effect */
+		.main-box:hover {
+			transform: translateY(-15px);
+			box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+		}
+		/* BOX SETIAP VIDEO */
+		.video-box {
+			background: #3a3a3a;
+			padding: 18px;
+			border-radius: 18px;
+			box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+		}
+
+		/* VIDEO POTRAIT */
+		.video-box video {
+			width: 300px;     
+			height: 540px;    
+			object-fit: cover;
+			border-radius: 14px;
+		}
+		/* BOX SETIAP VIDEO */
+		.video-box {
+			background: #3a3a3a;
+			padding: 18px;
+			border-radius: 18px;
+			box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+			transition: transform 0.3s, box-shadow 0.3s;
+		}
+
+		/* POP-UP EFFECT */
+		.video-box:hover {
+			transform: translateY(-15px);
+			box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+		}
+
+		/* VIDEO POTRAIT BESAR */
+		.video-box video {
+			width: 300px;
+			height: 540px;
+			object-fit: cover;
+			border-radius: 14px;
+		}
+
+        footer {
+            background: #777B7E;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+    <nav>
+        <ul style="list-style: none; padding: 0; margin: 0; text-align: center;">
+            <li style="display: inline; margin: 0 60px;"><a href="index.html"><p>Home &#127969;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Biodata.html"><p>Biodata &#128100;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Experience.html"><p>Experience &#128188;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Education.html"><p>Education &#127891;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Family.html"><p>Family &#128101;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Gallery.html"><p>Gallery &#128193;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Contact.html"><p>Contact &#128383;</p></a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Biodata Section -->
+<section id="main-boxes">
+    <div class="main-box" onclick="showSection('about')">
+        <h1>About Me&#x1F60E;</h1>
+        <span>My name is Muhammad Amir Irfan Bin Nurul Khodar and I'm student diploma in information management semester 5 at UiTM Kedah.I was born at Teluk Intan, Perak and currently living at Petaling Jaya, Selangor. My hobby was listening music and I'm currently has obsession with songs by twice cause it is masterpiece. When I was stress, I'll listen to music. If I was at home, I'll go to playground to release my stress cause many of things that can make me happy such as slide, swing and others.</span>
+		<a href="index.html">See More...</a>
+    </div>
+    <div class="main-box" onclick="showSection('friends')">
+        <h2>&#128108;My Friends&#128109;</h2>
+		<span>I got so many friends since childhood but only people that accept my deficiency will friend with me.Currently, I got so many friends since I got into University cause many of people accept me as well. I always got friend who care about me, I would never break my friendship with them. Hope they also not forgetting me also. Some of them will gave me advice if I had mental breakdown or something like that. I also will use my leisure time to spend with them. They also having fun if went out with me.</span>
+        <a href="Gallery.html">See More...</a>
+    </div>
+    <div class="main-box" onclick="showSection('family')">
+        <h2>My Family&#128101;</h2>
+		<span>My family was very rarely to gathering cause my 8 siblings already has their own way. Some of them went to university, some of them already worked. Sometimes on eid, has one person not coming cause need to work. That's why my family photo just little bit.But, I'm very grateful cause I got this family cause we will have our family time like sweep the trash in the yard together, going breakfast together and watching movie together. All activities that we do was without gadget cause we want to cherish time with family. <br>
+        <a href="Family.html">See More...</a>
+    </div>
+</section>
+
+<h1 style="text-align:center;">My Favourite Music <br> (My First Ever Twice Concert)</h1>
+
+<div class="music-row">
+    <div class="video-box">
+        <video controls loop>
+            <source src="V1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="video-box">
+        <video controls loop>
+            <source src="V2.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="video-box">
+        <video controls loop>
+            <source src="V3.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="video-box">
+        <video controls loop>
+            <source src="V4.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="video-box">
+        <video controls loop>
+            <source src="V5.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Amir Irfan. All rights reserved.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

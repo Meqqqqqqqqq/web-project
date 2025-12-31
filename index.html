@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset & base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cooper Black', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            background: #777B7E;
+            color: gray;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #B9BBB6;
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: #828282;
+        }
+
+        footer {
+            background: #777B7E;
+            color: white;
+            text-align: center;
+            padding: 20px;
+			
+		.music-box {
+			background-color: #e0e0e0;   /* gray box */
+			border: 2px solid #555;      /* dark gray border */
+			border-radius: 20px;
+			padding: 15px;
+			max-width: 400px;
+			margin: 30px auto;           /* center */
+			text-align: center;
+		}
+
+		.music-title {
+			color: #444;                 /* dark gray text */
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.music-box {
+			box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+		}
+		.music-box {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+		}
+
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+    <nav>
+        <ul style="list-style: none; padding: 0; margin: 0; text-align: center;">
+            <li style="display: inline; margin: 0 60px;"><a href="index.html"><p>Home &#127969;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Biodata.html"><p>Biodata &#128100;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Experience.html"><p>Experience &#128188;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Education.html"><p>Education &#127891;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Family.html"><p>Family &#128101;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Gallery.html"><p>Gallery &#128193;</p></a></li>
+            <li style="display: inline; margin: 0 20px;"><a href="Contact.html"><p>Contact &#128383;</p></a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Main Content -->
+<section class="scroll-animate" id="main-content" style="text-align: center;">
+    <div class="image-container">
+		<img src="P19.jpeg" alt="Image 1">
+		<img src="p2.jpg" alt="Image 2">
+		<img src="P20.jpeg" alt="Image 3">
+	</div>
+    <h2>Amir Irfan</h2>
+    <div class="content-box">
+        <h3>Assalamualaikum and Hi and Good Morning / Good Afternoon / Good Evening / Good Night!!!.My name is Muhammad Amir Irfan Bin Nurul Khodar semester 5 in Diploma in Information management. Welcome to my personal website that contains a lot of information about me. Hope you guys enjoy read about  my experience and my achievement that I gained. If you guys want to tell something or give a feedback please submit the form at contact section. Love you guyss!!!! </h3>
+    </div>
+	
+	<div class="music">
+		<audio src="S1.MP3" autoplay loop></audio>	
+</div>
+</section>
+
+<script>
+Function start () {
+alert ("welcome to my website") ; }
+</script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Amir Irfan. All rights reserved.</p>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
