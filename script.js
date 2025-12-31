@@ -1,4 +1,3 @@
-// Animation bila page load
 window.addEventListener("load", () => {
     const navItems = document.querySelectorAll(".navbar li");
 
@@ -13,7 +12,7 @@ window.addEventListener("load", () => {
         }, index * 150);
     });
 });
-// Scroll animation
+
 window.addEventListener("scroll", () => {
     const elements = document.querySelectorAll(".scroll-animate");
 

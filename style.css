@@ -61,6 +61,31 @@ body {
             text-align: center;
             padding: 20px;
         }
+		.music-box {
+			background-color: #e0e0e0;   
+			border: 2px solid #555;      
+			border-radius: 20px;
+			padding: 15px;
+			max-width: 400px;
+			margin: 30px auto;           
+			text-align: center;
+		}
+
+		.music-title {
+			color: #444;                 
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.music-box {
+			box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+		}
+		.music-box {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+		}
+
+        
 
 .index
 .image-container {
@@ -76,13 +101,13 @@ body {
 			object-fit: cover;
 			cursor: pointer;
 
-			border-radius: 20px;              /* bucu bulat comel */
-			border: 4px solid #555;           /* dark gray */
+			border-radius: 20px;              
+			border: 4px solid #555;           
   
 			transition: transform 0.3s ease, box-shadow 0.3s ease;
 		}
 
-		/* Pop-up animation */
+		
 		.image-container img:hover,
 		.image-container img:active {
 			transform: scale(1.2);
@@ -174,7 +199,7 @@ body {
 			font-size: 1.8rem;
 		}
 
-		/* Susunan melintang */
+		
 		.music-row {
 			display: flex;
 			gap: 35px;              
@@ -183,7 +208,7 @@ body {
 			margin-top: 50px;
 		}
 
-		/* BOX SETIAP VIDEO */
+		
 		.video-box {
 			background: #3a3a3a;
 			padding: 18px;
@@ -191,19 +216,19 @@ body {
 			box-shadow: 0 8px 18px rgba(0,0,0,0.4);
 		}
 
-		/* VIDEO POTRAIT */
+		
 		.video-box video {
 			width: 300px;     
 			height: 540px;    
 			object-fit: cover;
 			border-radius: 14px;
 		}
-		/* Pop-up effect */
+		
 		.main-box:hover {
 			transform: translateY(-15px);
 			box-shadow: 0 15px 25px rgba(0,0,0,0.2);
 		}
-		/* BOX SETIAP VIDEO */
+		
 		.video-box {
 			background: #3a3a3a;
 			padding: 18px;
@@ -211,14 +236,14 @@ body {
 			box-shadow: 0 8px 18px rgba(0,0,0,0.4);
 		}
 
-		/* VIDEO POTRAIT */
+		
 		.video-box video {
 			width: 300px;     
 			height: 540px;    
 			object-fit: cover;
 			border-radius: 14px;
 		}
-		/* BOX SETIAP VIDEO */
+		
 		.video-box {
 			background: #3a3a3a;
 			padding: 18px;
@@ -227,13 +252,13 @@ body {
 			transition: transform 0.3s, box-shadow 0.3s;
 		}
 
-		/* POP-UP EFFECT */
+		
 		.video-box:hover {
 			transform: translateY(-15px);
 			box-shadow: 0 15px 25px rgba(0,0,0,0.5);
 		}
 
-		/* VIDEO POTRAIT BESAR */
+		
 		.video-box video {
 			width: 300px;
 			height: 540px;
@@ -242,16 +267,16 @@ body {
 		}
 
 .experience
-/* Flex wrapper: image + experience box */
+
 		.experience-wrapper {
 			display: flex;
-			align-items: center;   /* Center image vertically */
+			align-items: center;   
 			gap: 20px;
 			margin: 65px auto;
 			max-width: 900px;
 		}
 	
-		/* Image box with gray border */
+		
 		.image-box {
 			width: 500px;
 			height: 300px;
@@ -259,10 +284,10 @@ body {
 			border-radius: 12px;
 			overflow: hidden;
 			flex-shrink: 0;
-			transition: transform 0.3s, box-shadow 0.3s; /* for pop-up effect */
+			transition: transform 0.3s, box-shadow 0.3s; 
 		}
 
-		/* Image inside box */
+		
 		.image-box img {
 			width: 100%;
 			height: 100%;
@@ -270,13 +295,13 @@ body {
 			display: block;
 		}
 
-		/* POP-UP EFFECT ON HOVER */
+		
 		.image-box:hover {
 			transform: translateY(-10px);
 			box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 		}
 
-		/* Wrapper */
+		
 		.experience-wrapper {
 			display: flex;
 			align-items: center;
@@ -285,7 +310,7 @@ body {
 			max-width: 1400px;     
 		}
 
-		/* EXPERIENCE BOX */
+		
 		.experience-item {
 			margin-bottom: 5px;
 			padding: 20px;
@@ -346,7 +371,6 @@ body {
             font-size: 1rem;
             color: #333;
         }
-		/* Wrapper untuk logo + kotak asal */
 		.education-wrapper {
 			display: flex;
 			align-items: center;
@@ -354,38 +378,43 @@ body {
 			margin-bottom: 30px;
 		}
 
-		/* Logo di luar kotak */
 		.education-logo {
 			width: 150px;
 			height: 150px;
 			flex-shrink: 0;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
 		}
 
 		.education-logo img {
 			width: 100%;
 			height: 100%;
-			object-fit: contain; 
+			object-fit: contain;
+		}
+
+		.education-logo:hover {
+			transform: scale(1.15);
+			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 		}
 
 .family
 .family-grid {
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: center; /* centers all images */
+			justify-content: center; 
 			gap: 20px;
 		}
 
        .family-member {
-			text-align: center; /* centers caption under image */
+			text-align: center; 
 		}
 
 
         .family-member img {
 			width: 200px;
-			height: 260px; /* Portrait size */
+			height: 260px; 
 			object-fit: cover;
 			border-radius: 12px;
-			border: 3px solid #d3d3d3; /* light gray */
+			border: 3px solid #d3d3d3; 
 			transition: transform 0.3s;
 		}
 
@@ -451,14 +480,14 @@ body {
             color: #777B7E;
         }
 		.centered-form {
-			max-width: 500px;          /* width form */
-			margin: 0 auto;            /* center horizontally */
-			padding: 20px;             /* ruang dalam form */
+			max-width: 500px;          
+			margin: 0 auto;           
+			padding: 20px;            
 			background-color: lightgray;
 			color: gray;
 			border-radius: 8px;
-			box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* optional, cantik sikit */
-			text-align: center;        /* center labels & buttons */
+			box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+			text-align: center;        
 		}
 
 		.centered-form input[type="text"],

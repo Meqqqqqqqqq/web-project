@@ -99,7 +99,6 @@
             font-size: 1rem;
             color: #333;
         }
-		/* Wrapper untuk logo + kotak asal */
 		.education-wrapper {
 			display: flex;
 			align-items: center;
@@ -107,17 +106,23 @@
 			margin-bottom: 30px;
 		}
 
-		/* Logo di luar kotak */
 		.education-logo {
 			width: 150px;
 			height: 150px;
 			flex-shrink: 0;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
 		}
 
 		.education-logo img {
 			width: 100%;
 			height: 100%;
-			object-fit: contain; /* sesuai untuk logo academic */
+			object-fit: contain;
+		}
+
+		
+		.education-logo:hover {
+			transform: scale(1.15);
+			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 		}
 
         footer {
@@ -126,30 +131,6 @@
             text-align: center;
             padding: 20px;
         }
-		.music-box {
-			background-color: #e0e0e0;   /* gray box */
-			border: 2px solid #555;      /* dark gray border */
-			border-radius: 20px;
-			padding: 15px;
-			max-width: 400px;
-			margin: 30px auto;           /* center */
-			text-align: center;
-		}
-
-		.music-title {
-			color: #444;                 /* dark gray text */
-			font-weight: bold;
-			margin-bottom: 10px;
-		}
-		.music-box {
-			box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-		}
-		.music-box {
-			position: fixed;
-			bottom: 20px;
-			right: 20px;
-		}
-
         
         @media (max-width: 768px) {
             nav ul {
@@ -187,7 +168,7 @@
             <img src="P40.jpg" alt="UiTM Logo">
         </div>
         <div class="education-item">
-            <h3>Diploma in Information Management</h3>
+            <a href="https://fis.uitm.edu.my/programme/diploma/im-110"><h3>Diploma in Information Management</h3></a>
             <span>Universiti Teknologi MARA (UiTM) | 2026</span>
             <p>Studied a lot of things such as Library, Archive, Software development and others.</p>
         </div>
@@ -198,7 +179,7 @@
             <img src="P32.png" alt="SMK Logo">
         </div>
         <div class="education-item">
-            <h3>Sijil Pelajaran Malaysia (SPM)</h3>
+            <a href="https://iphira.tripod.com/smih/spm.htm"><h3>Sijil Pelajaran Malaysia (SPM)</h3></a>
             <span>SMK Sultan Abdul Jalil Shah | 2022</span>
             <p>Focused on economics and business subjects. Others 6 subjects was pass with excellent.</p>
         </div>
@@ -209,7 +190,7 @@
             <img src="P34.png" alt="Primary School Logo">
         </div>
         <div class="education-item">
-            <h3>Ujian Penilaian Sekolah Rendah (UPSR)</h3>
+            <a href="https://iphira.tripod.com/srih/upsr.htm"><h3>Ujian Penilaian Sekolah Rendah (UPSR)</h3></a>
             <span>SK Seberang Perak | 2016</span>
             <p>Completed certifications and all 6 subjects was pass including science, math and others subjects.</p>
         </div>
@@ -220,7 +201,7 @@
             <img src="P36.jpg" alt="SRAI Logo">
         </div>
         <div class="education-item">
-            <h3>Ujian Sijil Rendah Agama Islam (SRAI)</h3>
+            <a href="https://www.jaipk.edu.my/index.php/infopeperiksaan/srai"><h3>Ujian Sijil Rendah Agama Islam (SRAI)</h3></a>
             <span>Sekolah Rendah Agama Raayat Al Muhajirin | 2016</span>
             <p>Focused on 6 subjects about islamic which is History, Manners, Quran and others subject.</p>
         </div>
@@ -231,7 +212,7 @@
             <img src="P36.jpg" alt="KAFA Logo">
         </div>
         <div class="education-item">
-            <h3>Ujian Penilaian Kelas KAFA (UPKK)</h3>
+            <a href="https://jaipk.edu.my/index.php/infopeperiksaan/upkk"><h3>Ujian Penilaian Kelas KAFA (UPKK)</h3></a>
             <span>Sekolah Rendah Agama Raayat Al Muhajirin | 2015</span>
             <p>Focused on 8 subjects about islamic which is reading quran, history, prayers practice and others.</p>
         </div>
@@ -239,7 +220,8 @@
 </section>
     
 <div class="music">
-		<audio src="S1.MP3" autoplay loop></audio>	
+		<audio controls autoplay>
+  <source src="S1.mp3" type="audio/ogg">	
 </div>
     </section>
     <!-- Footer -->
